@@ -5,7 +5,7 @@ import LandingPage from './Pages/Home'
 import Footer from './component/Footer'
 import About from './Pages/About'
 import Contactus from './Pages/Contactus'
-import BookCard from './Pages/product'
+import BookCard from './Pages/Product'
 
 function App() {
   return (
