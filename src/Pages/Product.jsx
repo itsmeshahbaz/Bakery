@@ -3,7 +3,7 @@ import Data from './Data';
 
 const BookCard = () => {
   const [book, setBook] = useState(Data);
-  const days = ["All", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",];
+  const days = ["All", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
   const filterBooks = (day) => {
     if (day === "All") {
@@ -15,37 +15,41 @@ const BookCard = () => {
   };
 
   return (
-    <div className=" pt-20 max-w-7xl bg-amber-950 mx-auto p-6">
-      <h1 className="text-4xl font-bold mb-4 text-amber-700 flex justify-center hover:text-amber-500 items-center">Our Products</h1>
+    <div className="pt-24 pb-12 px-4 bg-gradient-to-br from-yellow-50 to-amber-100 min-h-screen">
+      <h1 className="text-4xl font-bold mb-8 text-center text-amber-700 hover:text-amber-500 transition">
+        Our Products
+      </h1>
 
-      {/* Day Filter Buttons */}
-      <div className="flex flex-wrap justify-center items-center gap-2 mb-6">
+      {/* Filter Buttons */}
+      <div className="flex flex-wrap justify-center items-center gap-3 mb-10">
         {days.map((day) => (
           <button
             key={day}
             onClick={() => filterBooks(day)}
-            className="bg-amber-600 text-white px-4 py-2 rounded hover:shadow-amber-200 hover:bg-amber-400 transition"
+            className="bg-amber-600 text-white px-4 py-2 rounded-full hover:bg-amber-400 shadow-md transition"
           >
             {day}
           </button>
         ))}
       </div>
 
-      {/* Book Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      {/* Cards Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {book.map((boo) => (
           <div
             key={boo.id}
-            className=" rounded-lg shadow-amber-500 p-4 hover:shadow-lg transition-shadow hover:bg-amber-500 bg-amber-600"
+            className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300"
           >
             <img
               src={boo.image}
               alt={boo.bookName}
-              className="w-full h-64 object-cover rounded-md mb-4"
+              className="w-full h-48 object-cover"
             />
-            <h2 className="text-lg font-semibold text-white">{boo.Dish}</h2>
-            <h2 className="text-md text-gray-300">{boo.Day}</h2>
-            <p className="text-sm font-bold text-gray-900 mt-2">Rs.{boo.Price}</p>
+            <div className="p-4">
+              <h2 className="text-lg font-semibold text-amber-800">{boo.Dish}</h2>
+              <p className="text-sm text-gray-500 mb-1">{boo.Day}</p>
+              <p className="text-md font-bold text-amber-700">Rs. {boo.Price}</p>
+            </div>
           </div>
         ))}
       </div>
