@@ -28,13 +28,13 @@ function Header() {
             <Link to="/about" className="hover:text-yellow-300">About</Link>
           </li>
           <li>
-            <Link to="/our-story" className="hover:text-yellow-300">Our Story</Link>
+            <Link to="/stories" className="hover:text-yellow-300">Our Story</Link>
           </li>
           <li>
             <Link to="/product" className="hover:text-yellow-300">Products</Link>
           </li>
           <li>
-            <Link to="/contactus" className="hover:text-yellow-300">Contact Us</Link>
+            <Link to="/contact" className="hover:text-yellow-300">Contact Us</Link>
           </li>
         </ul>
 
@@ -52,9 +52,9 @@ function Header() {
       >
         <Link to="/" className="block hover:text-yellow-300" onClick={handleLinkClick}>Home</Link>
         <Link to="/about" className="block hover:text-yellow-300" onClick={handleLinkClick}>About</Link>
-        <Link to="/our-story" className="block hover:text-yellow-300" onClick={handleLinkClick}>Our Story</Link>
+        <Link to="/stories" className="block hover:text-yellow-300" onClick={handleLinkClick}>Our Story</Link>
         <Link to="/product" className="block hover:text-yellow-300" onClick={handleLinkClick}>Products</Link>
-        <Link to="/contactus" className="block hover:text-yellow-300" onClick={handleLinkClick}>Contact Us</Link>
+        <Link to="/contact" className="block hover:text-yellow-300" onClick={handleLinkClick}>Contact Us</Link>
       </div>
     </header>
   );
