@@ -1,6 +1,8 @@
 import React from 'react';
 import BookCard from './Detail';
 import ClientReviews from './Clientreview';
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
+
 
 function LandingPage() {
   return (
@@ -25,6 +27,14 @@ function LandingPage() {
         </div>
       </div>
       <BookCard />
+      <FloatingWhatsApp
+        phoneNumber='+923194573046'
+        accountName='M. Shahbaz'
+        avatar='../imgs/img6.jpeg'
+        chatMessage='Hi! How are you'
+        statusMessage='Availible 24/7'
+        darkMode={true}
+      />
       <ClientReviews />
     </div>
   );
