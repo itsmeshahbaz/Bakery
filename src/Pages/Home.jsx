@@ -1,7 +1,8 @@
 import React from 'react';
 import BookCard from './Detail';
 import ClientReviews from './Clientreview';
-import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
+import WhatsAppButton from "../component/wtbtn"
 
 
 function LandingPage() {
@@ -27,14 +28,9 @@ function LandingPage() {
         </div>
       </div>
       <BookCard />
-      <FloatingWhatsApp
-        phoneNumber='+923194573046'
-        accountName='Meal Mate'
-        avatar='../imgs/dplogo.png'
-        chatMessage='Hi! Can I Get More Info'
-        statusMessage='Availible 24/7'
-        darkMode={true}
-      />
+
+      <WhatsAppButton/>
+
       <ClientReviews />
     </div>
   );
