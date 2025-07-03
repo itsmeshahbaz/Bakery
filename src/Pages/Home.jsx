@@ -29,9 +29,9 @@ function LandingPage() {
       <BookCard />
       <FloatingWhatsApp
         phoneNumber='+923194573046'
-        accountName='M. Shahbaz'
-        avatar='../imgs/img6.jpeg'
-        chatMessage='Hi! How are you'
+        accountName='Meal Mate'
+        avatar='../imgs/dplogo.png'
+        chatMessage='Hi! Can I Get More Info'
         statusMessage='Availible 24/7'
         darkMode={true}
       />
