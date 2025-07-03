@@ -1,38 +1,36 @@
 import React, { useState } from 'react';
 import Data from './Data';
-import './Detail.css'
+import './Detail.css';
 
 const BookCard = () => {
-    const [book, setBook] = useState(Data);
+  const [book, setBook] = useState(Data);
 
-    return (
-        <section className="bg-amber-50 mx-10 my-10 w-300 rounded-4xl py-6">
-            <div className="max-w-5xl mx-auto px-2">
-                <h1 className="text-3xl font-bold text-center text-gray-800 mb-5">Dishes Collection</h1>
+  return (
+    <section className="bg-amber-50 py-10 px-4 sm:px-8 rounded-2xl shadow-inner">
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-4xl font-bold text-center text-amber-700 mb-10">Dishes Collection</h1>
 
-                <div className="flex overflow-x-auto m-7 space-x-5 scrollbar-hide">
-                    {book.map((boo) => (
-                        <div
-                            key={boo.id}
-                            className="min-w-[250px] flex bg-white/20 rounded-4xl shadow-md p-4 items-center"
-                        >
-                            {/* Text Left */}
-                            <div className="flex-1">
-                                <h2 className="font-bold text-lg text-gray-800">{boo.Dish}</h2>
-                            </div>
+        <div className="flex overflow-x-auto gap-6 pb-4 scrollbar-hide">
+          {book.map((boo) => (
+            <div
+              key={boo.id}
+              className="min-w-[260px] sm:min-w-[300px] bg-white rounded-3xl shadow-lg p-5 flex flex-col items-center transition-transform hover:scale-105"
+            >
+              {/* Image */}
+              <img
+                src={boo.image}
+                alt={boo.bookName}
+                className="w-28 h-28 object-cover rounded-full border-4 border-amber-200 shadow-md mb-4"
+              />
 
-                            {/* Image Right */}
-                            <img
-                                src={boo.image}
-                                alt={boo.bookName}
-                                className="w-24 h-24 bject-cover rounded-full shadow"
-                            />
-                        </div>
-                    ))}
-                </div>
+              {/* Dish Name */}
+              <h2 className="text-lg sm:text-xl font-semibold text-gray-800 text-center">{boo.Dish}</h2>
             </div>
-        </section>
-    );
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default BookCard;
