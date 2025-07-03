@@ -6,7 +6,7 @@ const BookCard = () => {
   const [book, setBook] = useState(Data);
 
   return (
-    <section className="bg-amber-50 py-10 px-4 sm:px-8 rounded-2xl shadow-inner">
+    <section className="bg-amber-50 py-10 px-4 sm:px-8 shadow-inner">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl font-bold text-center text-amber-700 mb-10">Dishes Collection</h1>
 
