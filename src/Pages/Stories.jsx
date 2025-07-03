@@ -7,7 +7,7 @@ const storiesData = [
     id: 1,
     title: "Healthy Meals for Busy People",
     content: "We provide nutritious meals for busy professionals, ensuring they never skip a healthy lunch.",
-    images: ["/imgs/story1.jpg", "/imgs/story2.jpg", "/imgs/story3.jpg", "/imgs/story4.jpg", "/imgs/story5.jpg"],
+    images: ["./stories/pic1.jpg", "./stories/pic2.jpg", "./stories/pic3.jpg","./stories/pic4.jpg","./stories/pic5.jpg"],
   },
   {
     id: 2,
@@ -30,13 +30,16 @@ const storiesData = [
 ];
 
 function Stories() {
-  const [openImages, setOpenImages] = useState([]);
-  const [showModal, setShowModal] = useState(false);
+ const [openImages, setOpenImages] = useState([]);
+const [showModal, setShowModal] = useState(false);
+const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleImageClick = (images) => {
-    setOpenImages(images);
-    setShowModal(true);
-  };
+const handleImageClick = (images) => {
+  setOpenImages(images);
+  setCurrentIndex(0);
+  setShowModal(true);
+};
+
 
   return (
     <div className="pt-24 px-6 pb-16 bg-gradient-to-b from-amber-50 to-yellow-100 min-h-screen">
@@ -61,24 +64,51 @@ function Stories() {
 
       {/* Modal */}
       {showModal && (
-        <div className="fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center px-4">
-          <div className="bg-white rounded-lg p-6 relative max-w-4xl w-full">
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center">
+          <div className="relative w-full max-w-3xl px-6">
             <button
-              className="absolute top-2 right-2 text-2xl text-red-500 hover:text-red-700"
+              className="absolute top-4 right-1 text-white text-3xl"
               onClick={() => setShowModal(false)}
             >
               <FaTimes />
             </button>
-            <h3 className="text-xl font-semibold mb-4 text-center text-amber-800">Story Gallery</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-              {openImages.map((img, idx) => (
-                <img
-                  key={idx}
-                  src={img}
-                  alt="story"
-                  className="w-full h-48 object-cover rounded shadow-md"
-                />
-              ))}
+
+            <div className="relative flex items-center justify-center">
+              {/* Previous button */}
+              <button
+                onClick={() =>
+                  setCurrentIndex((prev) =>
+                    prev === 0 ? openImages.length - 1 : prev - 1
+                  )
+                }
+                className="absolute left-0 text-white text-3xl px-4"
+              >
+                &#10094;
+              </button>
+
+              {/* Image Slide */}
+              <img
+                src={openImages[currentIndex]}
+                alt={`Slide ${currentIndex}`}
+                className="max-h-[80vh] w-full object-contain rounded-lg shadow-lg transition-all duration-300"
+              />
+
+              {/* Next button */}
+              <button
+                onClick={() =>
+                  setCurrentIndex((prev) =>
+                    prev === openImages.length - 1 ? 0 : prev + 1
+                  )
+                }
+                className="absolute right-0 text-white text-3xl px-4"
+              >
+                &#10095;
+              </button>
+            </div>
+
+            {/* Slide indicators */}
+            <div className="text-center text-white mt-4">
+              {currentIndex + 1} / {openImages.length}
             </div>
           </div>
         </div>

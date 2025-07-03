@@ -25,9 +25,6 @@ function Header() {
             <Link to="/" className="hover:text-yellow-300">Home</Link>
           </li>
           <li>
-            <Link to="/about" className="hover:text-yellow-300">About</Link>
-          </li>
-          <li>
             <Link to="/stories" className="hover:text-yellow-300">Our Story</Link>
           </li>
           <li>
@@ -51,7 +48,6 @@ function Header() {
         }`}
       >
         <Link to="/" className="block hover:text-yellow-300" onClick={handleLinkClick}>Home</Link>
-        <Link to="/about" className="block hover:text-yellow-300" onClick={handleLinkClick}>About</Link>
         <Link to="/stories" className="block hover:text-yellow-300" onClick={handleLinkClick}>Our Story</Link>
         <Link to="/product" className="block hover:text-yellow-300" onClick={handleLinkClick}>Products</Link>
         <Link to="/contact" className="block hover:text-yellow-300" onClick={handleLinkClick}>Contact Us</Link>
