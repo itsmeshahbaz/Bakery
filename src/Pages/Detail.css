@@ -1,9 +1,26 @@
-
-/* Hide scrollbars cleanly */
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.scrollbar-hide::-webkit-scrollbar {
+/* Hide scrollbar */
+.scroll-container::-webkit-scrollbar {
   display: none;
+}
+.scroll-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Auto scroll animation */
+.scroll-content {
+  display: flex;
+  animation: scroll-left-right 10s linear infinite alternate;
+  will-change: transform;
+}
+
+@keyframes scroll-left-right {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

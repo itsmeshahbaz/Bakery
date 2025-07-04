@@ -1,22 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import BookCard from './Detail';
 import ClientReviews from './Clientreview';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
-import WhatsAppButton from "../component/wtbtn"
+import WhatsAppButton from "../component/wtbtn";
 
+const bgImages = [
+  "/imgs/web1.png",
+  "/imgs/web2.jpg",
+  "/imgs/web3.jpg",
+  "/imgs/webHD.jpg",
+];
 
-function LandingPage() {
+const LandingPage = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % bgImages.length);
+    }, 4000); // Change image every 4 seconds
+
+    return () => clearInterval(interval); // cleanup
+  }, []);
+
   return (
     <div>
+      {/* Background Image Slider */}
       <div
-        className="min-h-screen bg-cover opacity-90 bg-center text-white font-serif"
-        style={{ backgroundImage: "url('../imgs/bg2.jpg')" }}
+        className="h-screen bg-cover bg-center bg-no-repeat text-white font-serif transition-all duration-1000 ease-in-out"
+        style={{ backgroundImage: `url(${bgImages[currentImage]})` }}
       >
         {/* Hero Content */}
-        <div className="flex flex-col items-center justify-center text-center px-4 py-20 bg-opacity-30">
-          <div className="mt-15 max-w-xl">
+        <div className="flex flex-col items-center justify-center h-full text-center px-4 bg-opacity-30">
+          <div className="max-w-xl cursor-pointer">
             <h2 className="text-xl mb-4 text-white inline-block px-3 py-1 rounded shadow">
-              A freshly home baked Meal
+              A Freshly Home Maked Meal
             </h2>
             <h1 className="text-3xl sm:text-4xl font-bold text-amber-300 drop-shadow-lg mb-6">
               Eat Rite, Feel Light
@@ -27,13 +44,12 @@ function LandingPage() {
           </div>
         </div>
       </div>
+
       <BookCard />
-
-      <WhatsAppButton/>
-
+      <WhatsAppButton />
       <ClientReviews />
     </div>
   );
-}
+};
 
 export default LandingPage;
