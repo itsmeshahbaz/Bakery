@@ -7,7 +7,7 @@ const monthlyMenu = {
     },
     Tuesday: {
       dish: "Aloo Chicken, Sabzi",
-      image: "/food/daalmash.jpg",
+      image: "../food/web1.png",
       description: "Lentils cooked in desi style.",
     },
     Wednesday: {
@@ -83,7 +83,7 @@ const monthlyMenu = {
   "Week 4": {
     Monday: {
       dish: "(daal channa+Qeema), Bhindi sabzi",
-      image: "/imgs/shami.jpg",
+      image: "../food/web21.png",
       description: "Beef patties with lentils.",
     },
     Tuesday: {
