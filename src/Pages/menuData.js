@@ -1,7 +1,7 @@
 const monthlyMenu = {
   "Week 1": {
     Monday: {
-      dish: "Aloo keema, Daal mach",
+      dish: "Aloo Qeema, Daal Mash",
       image: "../food/web5.png",
       description: "Minced meat with potatoes.",
     },
@@ -11,24 +11,24 @@ const monthlyMenu = {
       description: "Lentils cooked in desi style.",
     },
     Wednesday: {
-      dish: "Chicken Karahi, kadhi",
+      dish: "Chicken Karahi, karhai Pakora",
       image: "../food/web3.png",
       description: "Spicy chicken in tomato gravy.",
     },
     Thursday: {
-      dish: "Daal Chaawal, Sabzi",
+      dish: "Daal Chaawal, Mix Sabzi",
       image: "../food/web6.png",
       description: "Okra cooked with onions.",
     },
     Friday: {
-      dish: "Kofte, andha chane",
+      dish: "Kofty, Anda channe",
       image: "../food/web7.png",
       description: "Aromatic rice with meat.",
     },
   },
   "Week 2": {
     Monday: {
-      dish: "Chicken Kadahai, Daal Chana",
+      dish: "Chicken Karahai, Daal Channa",
       image: "../food/web9.png",
       description: "Slow-cooked beef stew.",
     },
@@ -38,7 +38,7 @@ const monthlyMenu = {
       description: "Spinach and paneer curry.",
     },
     Wednesday: {
-      dish: "Kofte, Andha Chane",
+      dish: "Kofty, Anda Channay",
       image: "../food/web7.png",
       description: "Minced meat with peas.",
     },
@@ -48,61 +48,61 @@ const monthlyMenu = {
       description: "Chana daal with masala.",
     },
     Friday: {
-      dish: "Sabzi Bhindi, Baryani",
+      dish: "Sabzi Bhindi, Biryani",
       image: "../food/web19.png",
       description: "Flavored rice with chicken.",
     },
   },
   "Week 3": {
     Monday: {
-      dish: "Aloo Chicken, Daal Mach",
+      dish: "Aloo Chicken, Daal Mash",
       image: "../food/web20.png",
       description: "Wheat and meat porridge.",
     },
     Tuesday: {
-      dish: "chicken Pulao,Shami Kabab",
+      dish: "Chicken Pulao,Shami Kabab",
       image: "../food/web13.png",
       description: "Potato and cauliflower curry.",
     },
     Wednesday: {
-      dish: "Chicken Karele, Daal Chawal",
+      dish: "Chicken Karely, Daal Chawal",
       image: "../food/web18.png",
       description: "Grilled chicken pieces.",
     },
     Thursday: {
-      dish: "Chicken Kadahi, Andhe Chane",
+      dish: "Chicken Karahai, Anda Channay",
       image: "../food/web10.png",
       description: "Seasonal veggies mix.",
     },
     Friday: {
-      dish: "Chicken Kabab, Maasr Chaawal",
+      dish: "Chicken Kabab, Masar Chawal",
       image: "../food/web2.png",
       description: "Spicy layered biryani.",
     },
   },
   "Week 4": {
     Monday: {
-      dish: "(daal chana+Qeema), Bhindi sabzi",
+      dish: "(daal channa+Qeema), Bhindi sabzi",
       image: "/imgs/shami.jpg",
       description: "Beef patties with lentils.",
     },
     Tuesday: {
-      dish: "Chicken Qorma, Daal Mach",
+      dish: "Chicken Qorma, Daal Mash",
       image: "../food/web17.png",
       description: "Indian apple gourd curry.",
     },
     Wednesday: {
-      dish: "Baryani, Karele",
+      dish: "Biryani, Karely",
       image: "../food/web15.png",
       description: "Meatball curry.",
     },
     Thursday: {
-      dish: "Chicken Kadahi, Daal Chaawal",
+      dish: "Chicken Karahai, Daal Chawal",
       image: "../food/web14.png",
       description: "Mashed roasted eggplant.",
     },
     Friday: {
-      dish: "Kofte, Chicken Pulao",
+      dish: "Kofty, Chicken Pulao",
       image: "../food/web12.png",
       description: "Sweet yellow rice.",
     },

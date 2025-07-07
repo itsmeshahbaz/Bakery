@@ -16,8 +16,8 @@ function Footer() {
         <div className="col-span-1">
           <h6 className="text-lg font-semibold mb-2">Rice</h6>
           <ul className="space-y-1 text-sm text-gray-700">
-            <li><Link className="hover:underline">Baryani</Link></li>
-            <li><Link className="hover:underline">Chana Pulao</Link></li>
+            <li><Link className="hover:underline">Biryani</Link></li>
+            <li><Link className="hover:underline">Channa Pulao</Link></li>
             <li><Link className="hover:underline">Daal Chawal</Link></li>
           </ul>
         </div>
@@ -25,17 +25,17 @@ function Footer() {
         <div className="col-span-1">
           <h6 className="text-lg font-semibold mb-2">Vegetable</h6>
           <ul className="space-y-1 text-sm text-gray-700">
-            <li><Link className="hover:underline">Aloo Palak</Link></li>
-            <li><Link className="hover:underline">Aloo Achaar</Link></li>
+            <li><Link className="hover:underline">Aloo Qeema</Link></li>
+            <li><Link className="hover:underline">Aloo Chicken</Link></li>
           </ul>
         </div>
 
         <div className="col-span-1">
           <h6 className="text-lg font-semibold mb-2">Daal</h6>
           <ul className="space-y-1 text-sm text-gray-700">
-            <li><Link className="hover:underline">Daal Mach</Link></li>
-            <li><Link className="hover:underline">Anda Chane</Link></li>
-            <li><Link className="hover:underline">Daal Chana</Link></li>
+            <li><Link className="hover:underline">Daal Mash</Link></li>
+            <li><Link className="hover:underline">Anda Channay</Link></li>
+            <li><Link className="hover:underline">Daal Channa</Link></li>
           </ul>
         </div>
 
@@ -43,8 +43,8 @@ function Footer() {
           <h6 className="text-lg font-semibold mb-2">Chicken</h6>
           <ul className="space-y-1 text-sm text-gray-700">
             <li><Link className="hover:underline">Shami Kabab</Link></li>
-            <li><Link className="hover:underline">Kofte</Link></li>
-            <li><Link className="hover:underline">Aloo Keema</Link></li>
+            <li><Link className="hover:underline">Kofty</Link></li>
+            <li><Link className="hover:underline">Aloo Qeema</Link></li>
             <li><Link className="hover:underline">Aloo Chicken</Link></li>
           </ul>
         </div>
