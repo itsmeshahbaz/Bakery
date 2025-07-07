@@ -6,25 +6,25 @@ const storiesData = [
   {
     id: 1,
     title: "🍽️A Wedding to Remember",
-    content: "It all began with a bride’s dream of having her favorite childhood dishes served on her big day. Our team worked closely with the couple, recreating recipes passed down from her grandmother’s kitchen. From hand-rolled chapli kebabs to soft naan and creamy kheer, every bite brought a memory to life. Guests didn’t just eat — they felt the story behind the food.",
+    content: "It all began with a bride’s dream of having her favorite childhood dishes served on her big day. Our team worked closely with the couple, recreating recipes passed down from her grandmother’s kitchen. From hand-rolled chapli kabab's to soft naan and creamy kheer, every bite brought a memory to life. Guests didn’t just eat — they felt the story behind the food.",
     images: ["./stories/pic1.jpg", "./stories/pic2.jpg", "./stories/pic3.jpg", "./stories/pic4.jpg", "./stories/pic5.jpg"],
   },
   {
     id: 2,
     title: "🎉A Birthday Bash with Flavor",
-    content: "For Ali’s 30th birthday, he didn’t want a fancy restaurant — he wanted food that spoke of home. We curated a spicy street-food menu featuring live chaat stations, sizzling seekh kebabs, and piping hot jalebis. It was more than just catering; it was an experience filled with joy, laughter, and nostalgia.",
+    content: "For Ali’s 30th birthday, he didn’t want a fancy restaurant — he wanted food that spoke of home. We curated a spicy street-food menu featuring live chaat stations, sizzling seekh kabab's, and piping hot jalebis. It was more than just catering; it was an experience filled with joy, laughter, and nostalgia.",
     images: ["/imgs/story6.jpg", "/imgs/story7.jpg", "/imgs/story8.jpg", "/imgs/story9.jpg", "/imgs/story10.jpg"],
   },
   {
     id: 3,
     title: "🕌Eid Gathering with Heart",
-    content: "One of our most fulfilling events was an Eid dawat for 150 guests. The host wanted traditional dishes served with elegance. We created a feast with biryani, mutton qorma, shami kebabs, and sheer khurma — all presented with a festive touch. The host later told us, ‘It felt like a big family meal, just how Eid should be.",
+    content: "One of our most fulfilling events was an Eid dawat for 150 guests. The host wanted traditional dishes served with elegance. We created a feast with biryani, mutton qorma, shami kabab's, and sheer khurma — all presented with a festive touch. The host later told us, ‘It felt like a big family meal, just how Eid should be",
     images: ["/imgs/story6.jpg", "/imgs/story7.jpg", "/imgs/story8.jpg", "/imgs/story9.jpg", "/imgs/story10.jpg"],
   },
   {
     id: 4,
-    title: "🏢Office Events Made Delicious",
-    content: "When a tech company approached us for their team lunch, they asked for something ‘local but professional.’ We delivered boxed meals with butter chicken, naan, salad, and gulab jamun — neatly packed but full of taste. The team was so impressed, they made it a monthly tradition",
+    title: "🏢Corporate Lunch, Desi Style",
+    content: "When a tech company approached us for their team lunch, they asked for something ‘local but professional.’ We delivered boxed meals with butter chicken, naan, salad, and gulab jamun — neatly packed but full of taste. The team was so impressed, they made it a monthly tradition.",
     images: ["/imgs/story6.jpg", "/imgs/story7.jpg", "/imgs/story8.jpg", "/imgs/story9.jpg", "/imgs/story10.jpg"],
   },
   {
