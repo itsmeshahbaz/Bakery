@@ -5,44 +5,57 @@ import { FaTimes } from 'react-icons/fa';
 const storiesData = [
   {
     id: 1,
-    title: "Healthy Meals for Busy People",
-    content: "We provide nutritious meals for busy professionals, ensuring they never skip a healthy lunch.",
-    images: ["./stories/pic1.jpg", "./stories/pic2.jpg", "./stories/pic3.jpg","./stories/pic4.jpg","./stories/pic5.jpg"],
+    title: "🍽️A Wedding to Remember",
+    content: "It all began with a bride’s dream of having her favorite childhood dishes served on her big day. Our team worked closely with the couple, recreating recipes passed down from her grandmother’s kitchen. From hand-rolled chapli kebabs to soft naan and creamy kheer, every bite brought a memory to life. Guests didn’t just eat — they felt the story behind the food.",
+    images: ["./stories/pic1.jpg", "./stories/pic2.jpg", "./stories/pic3.jpg", "./stories/pic4.jpg", "./stories/pic5.jpg"],
   },
   {
     id: 2,
-    title: "Office Events Made Delicious",
-    content: "Our catering services made this office party unforgettable. Great food, happy faces.",
+    title: "🎉A Birthday Bash with Flavor",
+    content: "For Ali’s 30th birthday, he didn’t want a fancy restaurant — he wanted food that spoke of home. We curated a spicy street-food menu featuring live chaat stations, sizzling seekh kebabs, and piping hot jalebis. It was more than just catering; it was an experience filled with joy, laughter, and nostalgia.",
     images: ["/imgs/story6.jpg", "/imgs/story7.jpg", "/imgs/story8.jpg", "/imgs/story9.jpg", "/imgs/story10.jpg"],
   },
   {
-    id: 2,
-    title: "Office Events Made Delicious",
-    content: "Our catering services made this office party unforgettable. Great food, happy faces.",
+    id: 3,
+    title: "🕌Eid Gathering with Heart",
+    content: "One of our most fulfilling events was an Eid dawat for 150 guests. The host wanted traditional dishes served with elegance. We created a feast with biryani, mutton qorma, shami kebabs, and sheer khurma — all presented with a festive touch. The host later told us, ‘It felt like a big family meal, just how Eid should be.",
     images: ["/imgs/story6.jpg", "/imgs/story7.jpg", "/imgs/story8.jpg", "/imgs/story9.jpg", "/imgs/story10.jpg"],
   },
   {
-    id: 2,
-    title: "Office Events Made Delicious",
-    content: "Our catering services made this office party unforgettable. Great food, happy faces.",
+    id: 4,
+    title: "🏢Office Events Made Delicious",
+    content: "When a tech company approached us for their team lunch, they asked for something ‘local but professional.’ We delivered boxed meals with butter chicken, naan, salad, and gulab jamun — neatly packed but full of taste. The team was so impressed, they made it a monthly tradition",
     images: ["/imgs/story6.jpg", "/imgs/story7.jpg", "/imgs/story8.jpg", "/imgs/story9.jpg", "/imgs/story10.jpg"],
   },
+  {
+    id: 5,
+    title: "🌿Garden Engagement Dinner",
+    content: "An outdoor engagement ceremony needed something elegant yet cozy. We crafted a menu around light starters, creamy pastas, grilled meats, and a touch of fusion — like chicken tikka sliders. Fairy lights, aroma in the air, and warm plates from our live station — it became a night no one wanted to end.",
+    images: ["/imgs/story6.jpg", "/imgs/story7.jpg", "/imgs/story8.jpg", "/imgs/story9.jpg", "/imgs/story10.jpg"],
+  },
+  {
+    id: 6,
+    title: "☕Small Moments, Big Joy",
+    content: "Not every story is about big events. Sometimes, it's about a family ordering our catering for their father’s retirement at home. We delivered a customized mini buffet with all his favorite dishes. The son later shared a picture — the father smiling with a full plate and even fuller heart",
+    images: ["/imgs/story6.jpg", "/imgs/story7.jpg", "/imgs/story8.jpg", "/imgs/story9.jpg", "/imgs/story10.jpg"],
+  },
+
 ];
 
 function Stories() {
- const [openImages, setOpenImages] = useState([]);
-const [showModal, setShowModal] = useState(false);
-const [currentIndex, setCurrentIndex] = useState(0);
+  const [openImages, setOpenImages] = useState([]);
+  const [showModal, setShowModal] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-const handleImageClick = (images) => {
-  setOpenImages(images);
-  setCurrentIndex(0);
-  setShowModal(true);
-};
+  const handleImageClick = (images) => {
+    setOpenImages(images);
+    setCurrentIndex(0);
+    setShowModal(true);
+  };
 
 
   return (
-    <div className="pt-24 px-6 pb-16 bg-gradient-to-b from-amber-50 to-yellow-100 min-h-screen">
+    <div className="pt-24 px-6 pb-16 bg-amber-100/80 min-h-screen">
       <h1 className="text-4xl font-bold text-center text-amber-700 mb-12">Our Stories</h1>
 
       {storiesData.map((story, index) => (

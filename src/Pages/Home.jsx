@@ -6,9 +6,10 @@ import WhatsAppButton from "../component/wtbtn";
 
 const bgImages = [
   "/imgs/web1.png",
-  "/imgs/web2.jpg",
+  "/imgs/web2.png",
   "/imgs/web3.jpg",
-  "/imgs/webHD.jpg",
+  "/imgs/web4.png",
+  "/imgs/web5.jpg",
 ];
 
 const LandingPage = () => {
