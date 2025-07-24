@@ -22,11 +22,11 @@ function Header() {
         {/* Desktop Links and Social Icons */}
         <div className="hidden md:flex items-center gap-6 ml-auto">
           {/* Navigation Links */}
-          <ul className="flex items-center space-x-4 text-sm uppercase tracking-wider">
+          <ul className="flex items-center space-x-4 text-sm font-semibold uppercase tracking-wider">
             <li><Link to="/" className="hover:text-white px-4 py-2 rounded-3xl bg-orange-400 hover:font-bold">Home</Link></li>
-            <li><Link to="/product" className="hover:text-white px-4 py-2 rounded-3xl bg-orange-400/80 hover:font-bold">Products</Link></li>
-            <li><Link to="/stories" className="hover:text-white px-4 py-2 rounded-3xl bg-orange-400/80 hover:font-bold">Catering</Link></li>
-            <li><Link to="/contact" className="hover:text-white px-4 py-2 rounded-3xl bg-orange-400/80 hover:font-bold">Contact Us</Link></li>
+            <li><Link to="/product" className="hover:text-amber-600 px-4 py-2 text-amber-800  rounded-3xl bg-amber-100 hover:font-extrabold">Products</Link></li>
+            <li><Link to="/stories" className="hover:text-amber-600 px-4 py-2 text-amber-800  rounded-3xl bg-amber-100 hover:font-extrabold">Catering</Link></li>
+            <li><Link to="/contact" className="hover:text-amber-600 px-4 py-2 text-amber-800  rounded-3xl bg-amber-100 hover:font-extrabold">Contact Us</Link></li>
           </ul>
         </div>
 
