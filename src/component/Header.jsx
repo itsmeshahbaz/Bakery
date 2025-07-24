@@ -12,10 +12,9 @@ function Header() {
   return (
     <header className="fixed px-2 py-2 top-0 left-0 w-full z-50">
       {/* Navigation Bar */}
-      <nav className="flex justify-between items-center px-6 py-4 bg-amber-100 text-white backdrop-blur-md rounded-4xl">
-
+      <nav className="flex justify-between items-center px-6 py-4 bg-amber-600/70 text-white backdrop-blur-md rounded-4xl">
         {/* Logo */}
-        <div className="text-2xl text-amber-600 flex items-center gap-2 font-bold cursor-pointer">
+        <div className="text-2xl text-amber-100 flex items-center gap-2 font-bold cursor-pointer">
           <img src="../imgs/logo.png" alt="Logo" className="w-10" />
           Meal Mate
         </div>

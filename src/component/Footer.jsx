@@ -25,8 +25,7 @@ function Footer() {
         <div className="col-span-1">
           <h6 className="text-lg font-semibold mb-2">Vegetable</h6>
           <ul className="space-y-1 text-sm text-gray-700">
-            <li><Link className="hover:underline">Aloo Qeema</Link></li>
-            <li><Link className="hover:underline">Aloo Chicken</Link></li>
+            <li><Link className="hover:underline">Seasonal Vegetable</Link></li>
           </ul>
         </div>
 
