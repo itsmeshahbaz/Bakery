@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react';
 
 const images = [
-  '../event/1.jpg',
-  '../event/2.jpg',
-  '../event/3.jpg',
-  '../event/4.jpg',
-  '../event/5.jpg',
-  '../event/6.jpg',
-  '../event/7.jpg',
-  '../event/8.jpg',
-  '../event/10.jpg',
-  '../event/11.jpg',
-  '../event/12.jpg',
-  '../event/13.jpg',
-  '../event/14.jpg',
-  '../event/15.jpg',
+  '/event/1.jpg',
+  '/event/2.jpg',
+  '/event/3.jpg',
+  '/event/4.jpg',
+  '/event/5.jpg',
+  '/event/6.jpg',
+  '/event/7.jpg',
+  '/event/8.jpg',
+  '/event/10.jpg',
+  '/event/11.jpg',
+  '/event/12.jpg',
+  '/event/13.jpg',
+  '/event/14.jpg',
+  '/event/15.jpg',
 ];
 
 const ImageSlider = () => {

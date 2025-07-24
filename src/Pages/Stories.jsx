@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
-import ImageSlider from './images';
+import ImageSlider from './ImageSlider'; // exact filename
 
 const storiesData = [
   {
