@@ -26,7 +26,7 @@ function Header() {
           <ul className="flex items-center space-x-4 text-sm uppercase tracking-wider">
             <li><Link to="/" className="hover:text-white px-4 py-2 rounded-3xl bg-orange-400 hover:font-bold">Home</Link></li>
             <li><Link to="/product" className="hover:text-white px-4 py-2 rounded-3xl bg-orange-400/80 hover:font-bold">Products</Link></li>
-            <li><Link to="/stories" className="hover:text-white px-4 py-2 rounded-3xl bg-orange-400/80 hover:font-bold">Our Story</Link></li>
+            <li><Link to="/stories" className="hover:text-white px-4 py-2 rounded-3xl bg-orange-400/80 hover:font-bold">Catering</Link></li>
             <li><Link to="/contact" className="hover:text-white px-4 py-2 rounded-3xl bg-orange-400/80 hover:font-bold">Contact Us</Link></li>
           </ul>
         </div>
@@ -44,7 +44,7 @@ function Header() {
       >
         <Link to="/" className="block hover:text-yellow-300" onClick={handleLinkClick}>Home</Link>
         <Link to="/stories" className="block hover:text-yellow-300" onClick={handleLinkClick}>Our Story</Link>
-        <Link to="/product" className="block hover:text-yellow-300" onClick={handleLinkClick}>Products</Link>
+        <Link to="/product" className="block hover:text-yellow-300" onClick={handleLinkClick}>Catering</Link>
         <Link to="/contact" className="block hover:text-yellow-300" onClick={handleLinkClick}>Contact Us</Link>
       </div>
     </header>

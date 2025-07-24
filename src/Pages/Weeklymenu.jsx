@@ -1,42 +1,65 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import monthlyMenu from './menuData';
 
 const WeeklyMenu = () => {
   const weeks = Object.keys(monthlyMenu);
-  const [activeWeek, setActiveWeek] = useState(weeks[0]);
+  const [activeWeek, setActiveWeek] = useState('');
   const [modalData, setModalData] = useState(null);
 
-  const currentMonthYear = new Date().toLocaleDateString('en-US', {
+  const currentDate = new Date();
+  const currentMonthYear = currentDate.toLocaleDateString('en-US', {
     month: 'long',
     year: 'numeric',
   });
 
+  // Get the current week based on the date (1st to 7th = Week 1, etc.)
+  const getCurrentWeek = () => {
+    const day = currentDate.getDate();
+    if (day <= 7) return 'Week 1';
+    if (day <= 14) return 'Week 2';
+    if (day <= 21) return 'Week 3';
+    return 'Week 4';
+  };
+
+  useEffect(() => {
+    const week = getCurrentWeek();
+    setActiveWeek(weeks.includes(week) ? week : weeks[0]);
+  }, [weeks]);
+
   return (
     <div className="min-h-screen p-6 bg-amber-50">
       <h1 className="text-3xl font-bold text-center mb-6">
-        📅 Monthly Menu - {currentMonthYear}
+        Monthly Menu - {currentMonthYear}
       </h1>
 
       {/* Week Tabs */}
       <div className="flex flex-wrap justify-center gap-2 mb-6">
-        {weeks.map((week) => (
-          <button
-            key={week}
-            onClick={() => setActiveWeek(week)}
-            className={`px-4 py-2 rounded-full font-semibold transition-all ${
-              activeWeek === week
-                ? 'bg-amber-600 text-white shadow'
-                : 'bg-white border hover:bg-amber-100'
-            }`}
-          >
-            {week}
-          </button>
-        ))}
+        {weeks.map((week) => {
+          const isCurrentWeek = week === getCurrentWeek();
+          const isActive = activeWeek === week;
+
+          return (
+            <button
+              key={week}
+              onClick={() => setActiveWeek(week)}
+              className={`px-4 py-2 rounded-full font-semibold border transition-all relative
+                ${isActive ? 'bg-amber-600 text-white shadow' : 'bg-white hover:bg-amber-100'}
+              `}
+            >
+              {week}
+              {isCurrentWeek && (
+                <span className="absolute -top-2 -right-2 text-xs bg-blue-500 text-white px-1.5 py-0.5 rounded-full">
+                  Now
+                </span>
+              )}
+            </button>
+          );
+        })}
       </div>
 
       {/* Menu Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-        {Object.entries(monthlyMenu[activeWeek]).map(([day, data], index) => (
+        {Object.entries(monthlyMenu[activeWeek] || {}).map(([day, data], index) => (
           <div
             key={index}
             onClick={() => setModalData({ ...data, day })}
