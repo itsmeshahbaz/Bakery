@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
+import ImageSlider from './images';
 
 const storiesData = [
   {
@@ -172,14 +173,15 @@ function Stories() {
         </div>
       )}
 
-      <h1 className="text-3xl md:text-4xl font-bold text-center text-amber-700 mb-8 md:mb-12">Let's Plan Your Event</h1>
-      <p className="text-center text-gray-700 text-sm sm:text-base px-4 max-w-2xl mx-auto leading-relaxed">
+      <h1 className="text-3xl  md:text-4xl font-bold text-center text-amber-700 mb-8 md:mb-12">Let's Plan Your Event</h1>
+      <p className="text-center pb-10 text-gray-700 text-sm sm:text-base px-4 max-w-2xl mx-auto leading-relaxed">
         Get in touch with us to discuss your event details, request a quote, or book a tasting session.<br />
         📍 Serving at all-over the Lahore<br />
         📱 Call/WhatsApp: +92-329-0772203<br />
         📧 Email: mealmate.pk@gmail.com<br />
         🖱️ Or use our Contact Form to request a callback.
       </p>
+      <ImageSlider/>
     </div>
   );
 }
