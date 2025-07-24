@@ -43,8 +43,8 @@ function Header() {
           }`}
       >
         <Link to="/" className="block hover:text-yellow-300" onClick={handleLinkClick}>Home</Link>
-        <Link to="/stories" className="block hover:text-yellow-300" onClick={handleLinkClick}>Our Story</Link>
-        <Link to="/product" className="block hover:text-yellow-300" onClick={handleLinkClick}>Catering</Link>
+        <Link to="/stories" className="block hover:text-yellow-300" onClick={handleLinkClick}>Catering</Link>
+        <Link to="/product" className="block hover:text-yellow-300" onClick={handleLinkClick}>Products</Link>
         <Link to="/contact" className="block hover:text-yellow-300" onClick={handleLinkClick}>Contact Us</Link>
       </div>
     </header>
