@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
-import ImageSlider from './ImageSlider'; // exact filename
+
 
 const storiesData = [
   {
@@ -181,7 +181,6 @@ function Stories() {
         📧 Email: mealmate.pk@gmail.com<br />
         🖱️ Or use our Contact Form to request a callback.
       </p>
-      <ImageSlider/>
     </div>
   );
 }
