@@ -6,21 +6,21 @@ const reviews = [
     name: "Aisha Khan",
     company: "TechNova Ltd.",
     text: "Meal Mate Catering has never disappointed. Timely service and great taste every time!",
-    image: "https://randomuser.me/api/portraits/women/44.jpg"
+    image: "../imgs/client1.jpg"
   },
   {
     id: 2,
     name: "Omar Malik",
     company: "Creative Solutions",
     text: "Our corporate event was a hit thanks to their delicious food and professional service.",
-    image: "https://randomuser.me/api/portraits/men/32.jpg"
+    image: "/imgs/client2.jpg "
   },
   {
     id: 3,
     name: "Sana Iqbal",
     company: "GreenTech",
     text: "Highly recommend for office lunches! Great value and quality.",
-    image: "https://randomuser.me/api/portraits/women/68.jpg"
+    image: "/imgs/client3.jpg"
   }
 ];
 
