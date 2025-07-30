@@ -3,7 +3,7 @@ import React from 'react';
 const reviews = [
   {
     id: 1,
-    name: "Aisha Khan",
+    name: "Daniyal Ali",
     company: "TechNova Ltd.",
     text: "Meal Mate Catering has never disappointed. Timely service and great taste every time!",
     image: "../imgs/client1.jpg"
