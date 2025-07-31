@@ -27,7 +27,7 @@ const WeeklyMenu = () => {
   }, [weeks]);
 
   return (
-    <div className="min-h-screen p-6 bg-amber-50">
+    <div className="min-h-screen p-6">
       <h1 className="text-3xl font-bold text-center mb-6">
         Monthly Menu - {currentMonthYear}
       </h1>

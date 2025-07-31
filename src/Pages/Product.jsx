@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
 import Data from './Data';
 import WeeklyMenu from './Weeklymenu';
+import MenuFlyer from './Menuflyer';
 
 const BookCard = () => {
   const [book, setBook] = useState(Data);
 
   return (
-    <div className="pt-24 pb-12 px-10 bg-gradient-to-br from-yellow-50 to-amber-100 min-h-screen">
-      <h1 className="text-4xl font-bold mb-8 text-center text-amber-700 hover:text-5xl hover:text-amber-500 transition">
+    <div className="pt-24 pb-12 px-10 bg-amber-300/20 min-h-screen">
+      <MenuFlyer/>
+      {/* <h1 className="text-4xl font-bold mb-8 text-center text-amber-700 hover:text-5xl hover:text-amber-500 transition">
         Our Products
-      </h1>
+      </h1> */}
 
       {/* Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-10 max-w-6xl mx-auto">
         {book.map((item) => (
           <div
             key={item.id}
@@ -31,8 +33,8 @@ const BookCard = () => {
       </div>
 
       <div className="mt-20">
+      </div> */}
         <WeeklyMenu />
-      </div>
     </div>
   );
 };
