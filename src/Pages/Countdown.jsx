@@ -6,7 +6,7 @@ const ComingSoonModal = () => {
 
   useEffect(() => {
     const endDate = new Date();
-    endDate.setDate(endDate.getDate() + 15);
+    endDate.setDate(endDate.getDate() + 7);
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -40,7 +40,7 @@ const ComingSoonModal = () => {
           &times;
         </button>
         <h2 className="text-3xl font-bold mb-2">Coming Soon</h2>
-        <p className="mb-6 text-gray-600">We're launching in just 15 days!</p>
+        <p className="mb-6 text-gray-600">We're launching in just 6 days!</p>
 
         <div className="flex justify-center gap-4 text-lg font-semibold">
           <div className="flex flex-col items-center">
