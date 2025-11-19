@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes, FaFacebookF, FaInstagram, SiTiktok } from 'react-icons/fa';
-import { SiTiktok } from 'react-icons/si'; // TikTok icon
+import { FaBars, FaTimes, FaFacebookF, FaInstagram } from 'react-icons/fa';
+import { SiTiktok } from 'react-icons/si';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
