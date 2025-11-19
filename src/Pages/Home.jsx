@@ -3,7 +3,7 @@ import BookCard from './Detail';
 import ClientReviews from './Clientreview';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import WhatsAppButton from "../component/wtbtn";
-import ComingSoonTimer from './Countdown';
+
 
 const bgImages = [
   "/imgs/web1.png",
@@ -27,7 +27,6 @@ const LandingPage = () => {
   return (
     <div>
       {/* Background Image Slider */}
-      <ComingSoonTimer/>
       <div
         className="h-screen bg-cover bg-center bg-no-repeat text-white font-serif transition-all duration-1000 ease-in-out"
         style={{ backgroundImage: `url(${bgImages[currentImage]})` }}
